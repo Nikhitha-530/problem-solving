@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // armstrong number  in arrow function
+
+    let armstrong=(num)=>{
+        check=num
+        final=num
+        pow=0
+        sum=0
+        while(num!==0){
+            num%10
+            num=Math.floor(num/10)
+            pow++
+        }
+        while(check!==0){
+            digit=check%10
+            sum=sum+(digit**pow)
+            check=Math.floor(check/10)
+           
+        }
+        if(sum===final){
+            console.log("it is armstrong number");
+            
+        }else{
+            console.log("it is not a armstrong number");
+            
+        }
+        
+    }
+    armstrong(123);
+    
+
+   </script>
+</body>
+</html>

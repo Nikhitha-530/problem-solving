@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // palindrome or not
+
+        num=343
+        check=num
+        rev=0
+        while(num!==0){
+            last=num%10
+            rev=rev*10+last
+            num=Math.floor(num/10)
+
+        }
+     if(rev===check){
+        console.log("it is a palindrome number");
+        
+     }
+     else{
+        console.log("it is not a palindrome number");
+        
+     }
+    
+      // fibonacci series
+        let a=5
+        let b=6
+        for(i=1;i<=10;i++){
+            c=a+b
+            a=b
+            b=c
+            console.log(c)
+        }
+
+        
+        
+    </script>
+</body>
+</html>

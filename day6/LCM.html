@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // LCM in named function
+
+    function LCM(a,b){
+        let min=a>b?b:a
+        let max=a>b?a:b
+        console.log(min,max);
+        if(max%min==0){
+            console.log(max,"is the LCM");
+            
+        }else{
+            check=max
+            while(true){
+                check++
+                if(check%min==0&&check%max==0){
+                    console.log(check, "is the LCM");
+                    break;
+                    
+                }
+            }
+        }
+        
+    }
+    LCM(4,30)
+    
+
+       
+    </script>
+</body>
+</html>
