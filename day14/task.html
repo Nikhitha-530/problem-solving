@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // count of vowels and consonants
+        str="javascript"
+        count=0
+        for(i of str){
+            if(i=="a"||i=="e"||i=="i"||i=="o"||i=="u"){
+                console.log(i);
+                count++
+                
+            }
+        }
+        console.log("vowels count is:",count);
+        count=0
+        for(i of str){
+            
+            if(i!=="a"&&i!=="e"&&i!=="i"&&i!=="o"&&i!=="u"){
+                console.log(i);
+                count++
+                
+            }
+        }
+        console.log("consonants count is:",count);
+
+        // count of uppercase and lowercase
+        let str1="NikhiTHa"
+        uppercase_count=0
+        lowercase_count=0
+        for(i of str1){
+            if(i===i.toUpperCase()&&i!== i.toLowerCase()){
+               uppercase_count++
+            }else if(i===i.toLowerCase()&&i!==i.toUpperCase()) {
+                lowercase_count++
+            }
+        }
+        console.log("uppercase count:"+ uppercase_count);
+        console.log("lowercase count:"+ lowercase_count);
+
+        // print the vowels in the even indexes
+        let input="programme";
+        vowels="aeiouAEIOU";
+        res=""
+        for(i=0;i<input.length;i++){
+            if(i%2===0&&vowels.includes(input[i])){
+                res+=input[i]+","
+            }
+        }if(res.length>0){
+            res=res.slice(0,-1)
+        }
+        console.log(res);
+        
+        
+        
+
+        
+        
+    </script>
+</body>
+</html>
