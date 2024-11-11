@@ -12,6 +12,7 @@
       // *
       // *
       // * * * * *
+
       num = 5;
       for (i = 1; i <= num; i++) {
         s = "";
@@ -55,7 +56,7 @@
         s = "";
         for (j = 1; j <= num; j++) {
           if (i == 1 || j == 3) {
-            s = s + "*" + " " ;
+            s = s + "*" + " ";
           } else {
             s = s + " " + " ";
           }
@@ -63,35 +64,28 @@
         console.log(s);
       }
 
-         // S pattern
+      // * * * * *
+      // *
+      // * * * * *
+      // *
+      // * * * * *
 
-      let num=5;
- let x=Math.ceil(num/2);
-for(i=1;i<=num;i++){
-    s=""
-   
-    for(j=1;j<=num;j++){
-     
-        if(i<x){
-            if(i==1||j==1){
-                s+="* "
-            }
+      num = 5;
+      mid = Math.ceil(num / 2);
+
+      for (i = 1; i <= num; i++) {
+        s = "";
+        for (j = 1; j <= num; j++) {
+          if (i == 1 || i == mid || i == num || j == 1) {
+            s = s + "*" + " ";
+          } else {
+            s = s + " " + " ";
+          }
         }
-       
-        else{
-            if(i>=x){
-            if(i==x||j==num||i==num){
-               s+="* "
-            }
-            else{
-                s+="  "
-            }
-            }
-        }
-           
-        }
-        console.log(s)
-    }
+        console.log(s);
+      }
+
+      
     </script>
   </body>
 </html>
